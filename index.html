@@ -1,105 +1,237 @@
+
 <!DOCTYPE html>
+<!-- saved from url=(0024)https://www.ooiv7oo.com/	-->
 <html lang="zh-CN">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>华羽 | 个人主页</title>
-		<meta name="description" content="这里是华羽的个人主页">
-		<meta name="keywords" content="华羽,ooiv7oo,华羽个人主页">
-		<link rel="icon" type="image/ico" href="https://file.ooiv7oo.com/www/images/favicon.ico">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.9.0/css/all.min.css">
-		<link rel="stylesheet" href="https://file.ooiv7oo.com/www/css/style.css"><!-- https://file.ooiv7oo.com/www/css/ -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-	</head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>华羽-一个孤独的人</title>
+	<meta name="description" content="这是华羽的小窝。">
+	<meta name="keywords" content="华羽,Yu Hua,華羽,화우,ooiv7oo,华羽的主页">
+	<link rel="icon" type="image/ico" href="https://file.ooiv7oo.com/www/images/favicon.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" href="https://file.ooiv7oo.com/www/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+</head>
 
-	<body>
-		<div id="main" class="container">
-			<div class="row my-card justify-content-center">
-				<div class="col-lg-4 photo-bg"></div>
-				<div class="col-lg-8 card">
-					<h1>Hi，我是华羽！</h1>
-					<p>自我介绍：一名正在学习的高中生，还没毕业的我，早已踌躇满志，对人生充满了希望！
-					</p>
-					<p>
-						我很喜欢的一句话：<br>逆风的方向，更适合飞翔，加油！！
+<body>
+	<canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+	<div id="main" class="container">
+		<div class="row my-card justify-content-center">
+			<div class="col-lg-4 photo-bg"></div>
+			<div class="col-lg-8 card">
+				<h1>Hi，我是华羽！</h1>
+				<p>一名正在学习的高中生，还没毕业的我，早已踌躇满志，对人生充满了希望！
+				</p>
+				<p>
+					我很喜欢的一句话：<br>逆风的方向，更适合飞翔，加油！！
 
-					</p>
+				</p>
 
-					<p>Catch me:</p>
-					<div class="row">
-						<a href="https://about.ooiv7oo.com" id="ooiv7oo-about" target="_blank" class="btn btn-primary col-lg-4">ABOUT</a>
-						<a  id="ooiv7oo-about-t" target="_blank" class="btn btn-primary col-lg-4">ABOUT</a>
-						<a href="https://gitee.com/ooiv7oo" target="_blank" class="btn btn-secondary col-lg-4">Gitee</a>
-						<a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=ooiv7oo@qq.com" target="_blank" id="ooiv7oo-mail" class="btn btn-success col-lg-4">Send a Mail</a>
-						<a  target="_blank" id="ooiv7oo-mail-t" class="btn btn-success col-lg-4">Send a Mail</a>
-					</div>
-
-					<ul class="social mt-3">
-						<li><a href="https://weibo.com/u/7339502707"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/ooiv7oo"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="https://t.me/ooiv7oo"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
-						<li><a href="https://twitter.com/ooiv7oo"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.zhihu.com/people/ooiv7oo"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>
-					</ul>
+				<p>Catch me:</p>
+				<div class="row">
+					<a href="https://about.ooiv7oo.com" id="ooiv7oo-about" target="_blank" class="btn btn-primary col-lg-4">ABOUT</a>
+					<a id="ooiv7oo-about-t" target="_blank" class="btn btn-primary col-lg-4">ABOUT</a>
+					<a href="https://gitee.com/ooiv7oo" target="_blank" class="btn btn-secondary col-lg-4">Gitee</a>
+					<a href="mailto:ooiv7oo@qq.com?subject=主题&body=内容" target="_blank" id="ooiv7oo-mail" class="btn btn-success col-lg-4">Send a Mail</a>
+					<a target="_blank" id="ooiv7oo-mail-t" class="btn btn-success col-lg-4">Send a Mail</a>
 				</div>
-			</div>
-			<div class="footer">
-				<footer class="mt-4">
-					<p><a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备20005518号-1</a></p>
 
-					<p>
-						<a href="https://console.upyun.com/register/?invite=H11U6qMND" target="_blank" rel="nofollow"><img src="https://file.ooiv7oo.com/www/images/YPY.png"
-							 style="width:50px"></a>
-						<a href="https://www.aliyun.com/minisite/goods?userCode=rp4t07u8" target="_blank" rel="nofollow"><img src="https://file.ooiv7oo.com/www/images/ALY.png"
-							 style="width:50px"></a>
-						<a href="https://cloud.tencent.com/act/cps/redirect?redirect=33567&cps_key=ee4f58bcd5e77fb134f7bcf26f29973f&from=activity"
-						 target="_blank" rel="nofollow"><img src="https://file.ooiv7oo.com/www/images/TXY.png" style="width:50px"></a>
-						<a href="https://myssl.com/www.ooiv7oo.com?from=mysslid" target="_blank" rel="nofollow"><img src="https://file.ooiv7oo.com/www/images/myssl.png"
-							 style="width:50px"></a>
-					</p>
-				</footer>
-
+				<ul class="social mt-3">
+					<li>
+					  <a href="https://qm.qq.com/cgi-bin/qm/qr?k=Fhjhli3GKmPnXiBLd-LzUK6ja2ImohtJ&noverify=0">
+					    <i class="fab fa-qq" aria-hidden="true"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="https://weibo.com/u/7339502707">
+					    <i class="fab fa-weibo " aria-hidden="true"></i></a>
+					</li>
+					<li>
+					  <a href="https://github.com/ooiv7oo">
+					    <i class="fab fa-github" aria-hidden="true"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="https://t.me/ooiv7oo">
+					    <i class="fab fa-telegram" aria-hidden="true"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="https://twitter.com/ooiv7oo">
+					    <i class="fab fa-twitter" aria-hidden="true"></i>
+					  </a>
+					</li>
+					<li>
+					  <a href="https://www.zhihu.com/people/ooiv7oo">
+					    <i class="fab fa-zhihu" aria-hidden="true"></i>
+					  </a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div id="aplayer" class="aplayer" data-order="random" data-id="2333833559" data-server="netease" data-type="playlist"
-		 data-fixed="true" data-autoplay="true" data-volume="0.8"></div>
-		<!-- aplayer -->
-		<script src="https://file.ooiv7oo.com/www/js/v3.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
-		<!-- end_aplayer -->
-		<script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdn.staticfile.org/popper.js/2.4.4/umd/popper.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-		<script src="https://file.ooiv7oo.com/www/layer/layer.js"></script>
-		<!--已升级为v3，舍弃main<script src="https://www.ooiv7oo.com/js/main.js"></script> -->
 
-		<script>
-			//弹出一个页面层
-			$('#ooiv7oo-about-t').on('click', function() {
-				layer.open({
-					type: 2,
-					title: 'ABOUT@羽落风华',
-					shadeClose: true,
-					shade: false,
-					maxmin: true, //开启最大化最小化按钮
-					area: ['80%', '100%'],
-					content: 'https://about.ooiv7oo.com'
-				});
+		<div id="tp-weather-widget"></div><!-- 心知天气 -->
+		
+		<div class="footer">
+			<footer class="mt-4">
+				<p>
+					<a id="logo" target="_blank" rel="nofollow">
+					  <img src="https://file.ooiv7oo.com/www/images/ooiv7oo.png" style="width:50px" alt="ooiv7oo">
+				    </a>
+					<br>
+					<a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备20005518号-1</a>
+				</p>
+
+				<!-- Aplayer -->
+				<div id="music" style="display:none">
+					<meting-js server="netease" type="playlist" id="5340862885" fixed="false" list-folded="true" autoplay="true" order="random">
+					</meting-js>
+				</div>
+				<!-- end·Aplayer -->
+
+				<p>
+
+					<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="nofollow">
+						<img src="https://file.ooiv7oo.com/www/images/YPY.png" style="width:50px">
+					</a>
+					<a href="https://www.aliyun.com/minisite/goods?userCode=rp4t07u8" target="_blank" rel="nofollow">
+						<img src="https://file.ooiv7oo.com/www/images/ALY.png" style="width:50px">
+					</a>
+					<a href="https://cloud.tencent.com/" target="_blank" rel="nofollow">
+						<img src="https://file.ooiv7oo.com/www/images/TXY.png" style="width:50px">
+					</a>
+					<a href="https://myssl.com/www.ooiv7oo.com?from=mysslid" target="_blank" rel="nofollow">
+					    <img src="https://file.ooiv7oo.com/www/images/myssl.png" style="width:50px">
+					</a>
+				</p>
+			</footer>
+
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/2.4.4/umd/popper.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Aplayer -->
+	<script> var meting_api = 'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r'; </script>
+	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+	<!-- end·Aplayer -->
+
+	<!-- 心知天气插件 -->
+	<style type="text/css">
+		a.sc-eHgmQL.hQLwwD {
+			display: none;
+		}
+
+		#tp-weather-widget .sw-container {
+			right: 10px !important;
+			left: unset !important;
+		}
+	</style>
+	<script>
+		(function (a, h, g, f, e, d, c, b) {
+			b = function () {
+				d = h.createElement(g);
+				c = h.getElementsByTagName(g)[0];
+				d.src = e;
+				d.charset = "utf-8";
+				d.async = 1;
+				c.parentNode.insertBefore(d, c)
+			};
+			a["SeniverseWeatherWidgetObject"] = f;
+			a[f] || (a[f] = function () {
+				(a[f].q = a[f].q || []).push(arguments)
 			});
-			$('#ooiv7oo-mail-t').on('click', function() {
-				layer.open({
-					type: 2,
-					title: '向我发送邮件',
-					shadeClose: true,
-					shade: false,
-					maxmin: true, //开启最大化最小化按钮
-					area: ['80%', '100%'],
-					content: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=ooiv7oo@qq.com'
-				});
+			a[f].l = +new Date();
+			if (a.attachEvent) {
+				a.attachEvent("onload", b)
+			} else {
+				a.addEventListener("load", b, false)
+			}
+		}(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" +
+			parseInt((new Date().getTime() / 100000000).toString(), 10)));
+		window.SeniverseWeatherWidget('show', {
+			flavor: "bubble",
+			location: "WTW3SJ5ZBJUY",
+			geolocation: true,
+			language: "zh-Hans",
+			unit: "c",
+			theme: "auto",
+			token: "85f10afe-ae08-469e-83bd-e2f1c662284e",
+			hover: "enabled",
+			container: "tp-weather-widget"
+		})
+
+	</script>
+	<!-- end·心知天气 -->
+
+	<!-- layer·弹窗 -->
+	<script src="https://file.ooiv7oo.com/www/layer/layer.js"></script>
+	<!-- end·layer -->
+
+	<!-- 鼠标点击爆炸特效 -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@2.2.0/anime.min.js"></script>
+	<script type="text/javascript" src="https://file.ooiv7oo.com/www/js/fireworks.js"></script>
+	<!-- 鼠标点击爆炸特效·end -->
+
+	<script>
+		//点击logo控制播放器显示or隐藏
+		$(document).ready(function () {
+			$("#logo").click(function () {
+				$("#music").toggle(500);//显示与隐藏的动作切换时间为500ms
 			});
-		</script>
-	</body>
+		});
+
+		//PC端点击按钮弹出一个页面层
+		$('#ooiv7oo-about-t').on('click', function () {
+			layer.open({
+				type: 2,
+				title: 'ABOUT@羽落风华',
+				shadeClose: true,
+				shade: false,
+				maxmin: true, //开启最大化最小化按钮
+				area: ['80%', '100%'],
+				content: 'https://about.ooiv7oo.com'
+			});
+		});
+		$('#ooiv7oo-mail-t').on('click', function () {
+			layer.open({
+				type: 2,
+				title: '向我发送邮件',
+				shadeClose: true,
+				shade: false,
+				maxmin: true, //开启最大化最小化按钮
+				area: ['80%', '100%'],
+				content: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=ooiv7oo@qq.com'
+			});
+		});
+		//js发送 调用本地邮箱发送邮件
+        function mailsomeone() {
+            var who = prompt("请输入收件人邮箱: ", "sample@sample.net");
+            var what = prompt("输入主题: ", "none");
+            if (confirm("你确定要向" + who + "发送主题为 " + what + "的邮件么?") == true) {
+                parent.location.href = 'mailto:' + who + '?subject=' + what + '';
+            }
+        }		
+	</script>
+
+	<!-- 百度统计 -->
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?2d0e9c4160a9cb3b285c348068708856";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+
+</body>
+
 </html>
