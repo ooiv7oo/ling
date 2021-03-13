@@ -1,34 +1,50 @@
-
 body {
 	background-color: var(--daytime-backdrop);
 	color: #555;
+	-webkit-tap-highlight-color: transparent;
+	-moz-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
+
 .content {
 	max-width: 50rem;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background-color: var(--daytime-backdrop);
 }
+
+
+
+
 #header {
 	background-color: var(--header);
 }
+
 #header .suggest {
 	color: azure;
 }
+
 #header .suggest .webname {
 	color: var(--header-suggest-webname);
 }
+
 #header .suggest .say {
 	color: var(--header-suggest-say);
 }
+
 #header .meun_list::selection {
 	background-color: var(--daytime-major);
 }
+
 #header .meun_list::-webkit-scrollbar-thumb {
 	background-color: var(--daytime-major);
 }
+
 #header .meunbar {
 	border-bottom: 1px solid var(--header-meunbar);
 }
+
 #header .summary .nickname a:hover,
 #header .meun_list .meun_li a:hover,
 #header .search_btn:hover,
@@ -41,56 +57,77 @@ body {
 .tool_bar .tool_night a:hover {
 	color: var(--daytime-major);
 }
+
 #header .text {
 	color: var(--header-text);
 }
+
+
+
 
 .index_list {
 	background-color: var(--daytime-backdrop);
 	border-top: 1px solid #EAEAEA;
 }
+
 .index_list .name {
 	color: var(--index_list-name);
 }
+
 .index_list .introduce {
 	color: var(--index_list-introduce);
 }
+
 .index_list .information {
 	color: var(--index_list-information);
 }
+
 .index_list_right .index_list_unique img {
 	border: 1px solid var(--index_list_unique-img);
 }
+
 .index_list .introduce_album_img img {
 	border: 1px solid var(--introduce_album_img-img);
 }
+
 .unique_basic {
 	background: linear-gradient(135deg, #000 0%, #fff 100%);
 }
+
 .unique_basic i {
 	color: var(--daytime-major);
 }
+
 .introduce_album_basic {
 	background: linear-gradient(135deg, #000 0%, #fff 100%);
 }
+
+
+
+
 .paging .total,
 .paging .number a {
 	color: var(--daytime-backdrop);
 	background-color: var(--daytime-major);
 }
+
 .paging_ajax_btn a {
 	background-color: var(--daytime-major);
 	border: 1px solid var(--daytime-line);
 	color: var(--paging_ajax_btn-a);
 }
+
 .paging .number a:hover {
 	background-color: var(--daytime-major);
 	color: var(--daytime-backdrop);
 }
+
 .paging_ajax_btn a:hover,
 .page-navigator .commentslistnext:hover {
 	background-color: var(--daytime-pass);
 }
+
+
 
 
 
@@ -101,15 +138,22 @@ body {
 .posture_basic {
 	background: linear-gradient(135deg, #000 0%, #fff 100%);
 }
+
 .card_word i {
 	color: var(--daytime-major);
 }
+
 .card_introduce {
 	color: var(--card_introduce);
 }
+
 .card_information {
 	color: var(--card_information);
 }
+
+
+
+
 
 .nav-post a::before,
 .nav-post a::after,
@@ -121,6 +165,7 @@ body {
 .text-primary {
 	color: var(--daytime-major);
 }
+
 .post_headline_information {
 	border-bottom: 1px solid #e6e6e6;
 }
@@ -136,18 +181,42 @@ body {
 .post_bottom .line {
 	border-bottom: 1px solid var(--daytime-line);
 }
+
 .line:after {
 	background-color: var(--daytime-major);
 }
+
+
+
+
+.douban_ul .active,
+.links_ul .active {
+	background-color: var(--daytime-pass);
+}
+
+.douban_ul,
+.links_ul {
+	background-color: var(--daytime-major);
+	color: var(--daytime-backdrop);
+}
+
+.douban_ul li:hover,
+.links_ul li:hover {
+	background-color: var(--daytime-pass) !important;
+}
+
+
 
 
 .checkbox_tip {
 	background-color: var(--daytime-major);
 	color: #fff;
 }
+
 .checkbox_tip:after {
 	border-top-color: var(--daytime-major);
 }
+
 .model-6 .checkbox input:checked+label {
 	background: var(--daytime-major);
 }
@@ -155,25 +224,31 @@ body {
 .model-6 .checkbox input:checked+label:after {
 	background: var(--daytime-major);
 }
+
 #comment-form .comment-inputs input {
 	background-color: #f8f8f8;
 }
+
 #comment-form textarea {
 	background: #f8f8f8;
 }
+
 #comment-form .comment-buttons #submitComment {
 	background: var(--daytime-major);
 	color: #fff;
 }
+
 #comment-form .comment-buttons #submitComment:hover {
 	background: var(--daytime-pass);
 }
 
 
 
+
 #footer {
 	color: var(--footer);
 }
+
 ::-webkit-scrollbar-thumb {
 	background: var(--daytime-major);
 }
@@ -188,6 +263,7 @@ body {
 .nice-dark-mode #header .suggest .webname {
 	color: var(--dark-header-suggest-webname)
 }
+
 .nice-dark-mode #header .suggest .say {
 	color: var(--dark-header-suggest-say)
 }
@@ -201,6 +277,10 @@ body {
 	background: var(--dark-major);
 	outline: 2px solid #212121;
 }
+
+
+
+
 .nice-dark-mode #header,
 .nice-dark-mode .index_list,
 .nice-dark-mode #footer,
@@ -227,10 +307,13 @@ body {
 }
 
 
+
+
 .nice-dark-mode .index_list_right .index_list_unique img,
 .nice-dark-mode .index_list .introduce_album_img img {
 	border: 1px solid var(--dark-line);
 }
+
 .nice-dark-mode .index_list .name {
 	color: var(--dark-index_list-name);
 }
@@ -246,10 +329,15 @@ body {
 .nice-dark-mode .card_word i {
 	color: var(--dark-major);
 }
+
 .nice-dark-mode .card_introduce,
 .nice-dark-mode .card_information {
 	color: var(--dark-major);
 }
+
+
+
+
 
 .nice-dark-mode .nav-post a::before,
 .nice-dark-mode .nav-post a::after,
@@ -257,6 +345,7 @@ body {
 .nice-dark-mode .nav-post .icon-wrap::after {
 	background: var(--dark-major);
 }
+
 .nice-dark-mode .post_headline_information {
 	border-bottom: 1px solid #e6e6e6;
 }
@@ -274,33 +363,47 @@ body {
 }
 
 
+
+
 .nice-dark-mode .paging .total,
 .nice-dark-mode .paging .number a {
 	color: var(--dark-backdrop);
 	background-color: var(--dark-major);
 }
+
 .nice-dark-mode .paging_ajax_btn a {
 	color: var(--dark-paging_ajax_btn-a);
 	background-color: var(--dark-major);
 	border: 1px solid var(--dark-line);
 }
+
 .nice-dark-mode .paging .number a:hover {
 	background-color: var(--dark-major);
 	color: var(--dark-backdrop);
 }
+
 .nice-dark-mode .paging_ajax_btn a:hover,
 .nice-dark-mode .page-navigator .commentslistnext:hover {
 	background-color: var(--dark-pass);
 }
 
+
+
+
+
 .nice-dark-mode #footer {
 	color: var(--dark-footer);
 }
 
+
+
+
+
 .nice-dark-mode .links_ul,
 .nice-dark-mode .douban_ul {
-	background-color: var(--dark-backdrop);
+	background-color: var(--dark-major);
 }
+
 .nice-dark-mode .douban_li:hover,
 .nice-dark-mode .links_li:hover {
 	background-color: var(--dark-pass) !important;
@@ -316,22 +419,25 @@ body {
 	background-color: var(--dark-major);
 	color: #000;
 }
+
 .nice-dark-mode .checkbox_tip:after {
 	border-top-color: var(--dark-major);
 }
+
 .nice-dark-mode #comment-form .comment-buttons #submitComment {
 	background: var(--dark-major);
 	color: #000;
 }
+
 .nice-dark-mode #comment-form .comment-buttons #submitComment:hover {
 	background: var(--dark-pass);
 }
+
 .nice-dark-mode #comment-form .comment-inputs input,
 .nice-dark-mode #comment-form textarea {
 	background-color: rgb(50 50 50);
 	color: #aaa;
 }
-
 
 
 .nice-dark-mode .model-6 .checkbox input:checked+label {
@@ -361,13 +467,16 @@ body {
 .nice-dark-mode #mp-music-wrapper.open {
 	background-color: var(--dark-backdrop);
 }
+
 .nice-dark-mode .current {
 	color: var(--dark-major);
 	background-color: #000;
 }
+
 .nice-dark-mode #mp-list li {
 	color: var(--dark-major);
 }
+
 .nice-dark-mode #mp-list li:hover {
 	color: rgb(236, 236, 236);
 	background-color: rgb(20, 20, 20);
@@ -398,8 +507,8 @@ body {
 	--footer: #000;
 	--card_introduce: #000;
 	--card_information: #000;
-	
-	--dark-major:#fff;
+
+	--dark-major: #fff;
 	--dark-pass: #b2b2b2;
 	--dark-backdrop: #292929;
 	--dark-footer: #fff;
@@ -410,27 +519,27 @@ body {
 	--dark-index_list-information: #ebebeb;
 	--dark-paging_ajax_btn-a: #000000;
 }
+
 /* 文章样式 */
-body{
--webkit-tap-highlight-color: transparent;
--moz-tap-highlight-color: transparent;
--webkit-touch-callout: none;
--webkit-user-select: none;
-user-select:none;
+
+.post h2 {
+	border-left: 3px solid var(--daytime-major);
+	padding-left: 15px;
 }
-.post h2{
-    border-left: 3px solid var(--daytime-major);
-    padding-left: 15px;
+
+.nice-dark-mode .post h2 {
+	border-left: 3px solid var(--dark-major);
 }
-.nice-dark-mode .post h2{
-    border-left: 3px solid var(--dark-major);
-}
+
 .post h3:before {
-    content: '·';
-    color: var(--daytime-major);
-    padding-left: 5px;
-    padding-right: 5px
+	content: "";
+	float: left;
+	margin: 7px;
+	padding: 2px;
+	border-radius: 50%;
+	border: 2px solid #000000;
 }
+
 .nice-dark-mode .post h3:before {
-    color: var(--dark-major);
+	border: 2px solid #fff;
 }
