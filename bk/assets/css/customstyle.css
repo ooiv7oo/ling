@@ -1,5 +1,5 @@
 body {
-	background-color: var(--daytime-backdrop);
+	background-color: var(--daytime-backdrop)!important;
 	color: #555;
 	-webkit-tap-highlight-color: transparent;
 	-moz-tap-highlight-color: transparent;
@@ -118,13 +118,13 @@ body {
 }
 
 .paging .number a:hover {
-	background-color: var(--daytime-major);
+	background-color: var(--daytime-major)!important;
 	color: var(--daytime-backdrop);
 }
 
 .paging_ajax_btn a:hover,
 .page-navigator .commentslistnext:hover {
-	background-color: var(--daytime-pass);
+	background-color: var(--daytime-pass)!important;
 }
 
 
@@ -144,11 +144,11 @@ body {
 }
 
 .card_introduce {
-	color: var(--card_introduce);
+	color: var(--card_introduce)!important;
 }
 
 .card_information {
-	color: var(--card_information);
+	color: var(--card_information)!important;
 }
 
 
@@ -398,14 +398,21 @@ body {
 
 
 
+.nice-dark-mode .douban_ul .active,
+.nice-dark-mode .links_ul .active {
+	background-color: var(--dark-pass)!important;
+}
 
 .nice-dark-mode .links_ul,
 .nice-dark-mode .douban_ul {
 	background-color: var(--dark-major);
 }
-
-.nice-dark-mode .douban_li:hover,
-.nice-dark-mode .links_li:hover {
+.nice-dark-mode .douban_ul li,
+.nice-dark-mode .links_ul li {
+	color: var(--dark-backdrop) !important;
+}
+.nice-dark-mode .douban_ul li:hover,
+.nice-dark-mode .links_ul li:hover {
 	background-color: var(--dark-pass) !important;
 }
 
